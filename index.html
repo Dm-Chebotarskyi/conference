@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>InNavi conference</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand name" href="#">InNavi Conference</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+              <ul id="navbar" class="nav navbar-nav navbar-right">
+                <li><a href="#about-id">About <span class="sr-only">(current)</span></a></li>
+                <li><a href="#schedule-id">Schedule <span class="sr-only">(current)</span></a></li>
+                <li><a href="#joinus-id">Join us<span class="sr-only">(current)</span></a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container hero">
+      <div class="hero-image"></div>
+      <div class="hero-text">
+        <h1 class="headline">The Future Navigation is Here!</h1>
+        <p class="teaser">Are you ready to find your way?</p>
+        <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#loginModal">Join us today</button>
+      </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="about-id" class="featured-heading">About conference</h2>
+                <p class="text text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="schedule-id" class="featured-heading">Schedule</h2>
+                <p class="text text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <h3>Our topics:</h3>
+                <ul class="list-group text-center">
+                    <li class="list-group-item">Indoore navigarion with maps <span class="badge"> 21.12.2016</span></li>
+                    <li class="list-group-item">Indoore navigarion with Beacons <span class="badge"> 22.12.2016</span></li>
+                    <li class="list-group-item active">Indoore navigarion with DecaWave <span class="badge"> 23.12.2016</span></li>
+                    <li class="list-group-item">Outdoore navigation with GPS<span class="badge"> 24.12.2016</span></li>
+                    <li class="list-group-item">Outdoore natural navigation<span class="badge"> 25.12.2016</span></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="joinus-id" class="featured-heading">Join us today</h2>
+                <p class="text text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn btn-lg btn-primary btn-block-50" data-toggle="modal" data-target="#loginModal">Sign up</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer class="row">
+            <div class="col-md-12">
+                <p>
+                    © 2016 InNavi
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sign up</h4>
+          </div>
+          <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Confirm password</label>
+                  <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm password">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
